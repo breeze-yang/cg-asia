@@ -1,0 +1,19 @@
+@import "bootstrap";
+//= require jquery3
+//= require popper
+//= require bootstrap-sprockets
+// https://eddyerburgh.me/use-bootstrap-4-media-query-mixins
+@font-face {
+  font-family: "Gotham-Medium";
+  src: url(asset-path('gotham-medium.otf'));
+}
+
+@font-face {
+  font-family: "TwCenMT-Bold";
+  src: url(asset-path('TwCenMT-Bold.TTF'));
+}
+
+@font-face {
+  font-family: "Helvetica-Light";
+  src: url(asset-path('helvetica-light.otf'));
+}
