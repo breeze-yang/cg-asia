@@ -1,0 +1,46 @@
+<div class="cg-asia-bg">
+  <div class="container cg-asia-margin">
+    <div class="row cg-asia-item">
+      <div class="col-lg-4 cg-asia-title">
+        <div>ABOUT CG-ASIA</div>
+        <div class="cg-asia-spacer"></div>
+      </div>
+
+
+      <div class="col-lg-7 cg-asia-text">
+        Certified Genius Corp (Asia) was founded in August 2016 by Mr. He Junjun, invested by the US dollar fund SIG
+        Heiner Asia, focusing on providing top-notch Asian competitions and peripheral entertainment services to
+        competitive gamers around the world. Officially authorized by the WSOP since 2018. The first WSOP ASIA will be
+        held in April 2019 and will be held in other countries and regions in Asia. Welcome to continue to pay
+        attention.
+      </div>
+    </div>
+
+    <div class="row cg-asia-item cg-asia-item-bottom">
+      <div class="col-lg-4 cg-asia-title">
+        <div>Mario Ho</div>
+      </div>
+
+      <div class="col-lg-4 cg-asia-text">
+        - CEO at Certified Genius Corp (Asia) <br>
+        - President of Macao E-Sports Federation
+      </div>
+
+      <div class="col-lg-4 cg-asia-text cg-asia-avatar-container">
+        <%= image_tag 'cg-asia/avatar.png', class: 'cg-asia-avatar' %>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<script>
+  $(".navbar-cg").addClass("home-nav-scroll");
+  $(window).scroll(function () {
+    if ($(".navbar").offset().top > 50) {
+      $(".navbar-cg").removeClass("home-nav-scroll");
+    } else {
+      $(".navbar-cg").addClass("home-nav-scroll");
+    }
+  })
+</script>
