@@ -1,0 +1,11 @@
+context.instance_eval do
+  column(:id)
+  column(:title)
+  column(:location_name)
+  column(:prize_pool)
+  column(:begin_time)
+  column(:end_time)
+  actions
+end
+
+

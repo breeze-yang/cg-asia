@@ -1,0 +1,29 @@
+"zh-CN":
+  activerecord:
+    models:
+      admin_user: "管理员"
+      comment: "管理员备注"
+      main_event: "主赛"
+    attributes:
+      admin_user:
+        email: "邮箱"
+        sign_in_count: "登陆次数"
+        current_sign_in_at: "当前登录"
+        last_sign_in_at: "上次登录时间"
+        last_sign_in_ip: "上次登录地点"
+        created_at: "注册时间"
+        password: "密码"
+        password_confirmation: "确认密码"
+      main_event:
+        title: "赛事名称"
+        location_name: "地点名称"
+        prize_pool: "奖池"
+        begin_time: "开始时间"
+        end_time: "结束时间"
+
+    format: "%{attribute}%{message}"
+    messages:
+      blank: '不能为空'
+
+
+

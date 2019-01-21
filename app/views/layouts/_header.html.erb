@@ -7,23 +7,27 @@
     <ul class="navbar-nav navbar-nav-cg ml-auto">
       <li class="nav-item active">
         <a class="nav-link" href="/">HOME</a>
-        <div class="nav-link-active"></div>
+        <div class="<%= 'nav-link-active' if current_page?(root_path) %>"></div>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="/cg_asia">CG ASIA</a>
+        <div class="<%= 'nav-link-active' if current_page?('/cg_asia') %>"></div>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">TOURNAMENT</a>
+        <a class="nav-link" href="/tournament">TOURNAMENT</a>
+        <div class="<%= 'nav-link-active' if current_page?('/tournament') %>"></div>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">NEWS</a>
+        <a class="nav-link" href="/news">NEWS</a>
+        <div class="<%= 'nav-link-active' if current_page?('/news') %>"></div>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">VIDEOS</a>
+        <a class="nav-link" href=/videos>VIDEOS</a>
+        <div class="<%= 'nav-link-active' if current_page?('/videos') %>"></div>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">ONLINE POKER</a>
-        <div class="nav-link-active"></div>
+        <a class="nav-link" href="/online_poker">ONLINE POKER</a>
+        <div class="<%= 'nav-link-active' if current_page?('/online_poker') %>"></div>
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

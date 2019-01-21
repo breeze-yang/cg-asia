@@ -31,3 +31,9 @@
 **/.DS_Store
 /.idea
 /db/schema.rb
+
+# dotenv
+.env.development
+.env.test
+.env.production
+.env
