@@ -8,4 +8,25 @@ context.instance_eval do
     row(:event_pdf) { |event| link_to 'PDF', event.event_pdf_url, target: '_blank' }
     row(:published)
   end
+
+  panel '赛事简介' do
+    table_for(resource.event_intros) do
+      column(:about_title)
+      column(:title)
+      column(:image) { |event| image_tag(event.image_url, height: 150) }
+      column(:description)
+      column(:actions) do
+        edit_link = link_to I18n.t('active_admin.edit'), edit_resource_path(resource), class: 'edit_link member_link', title: I18n.t('active_admin.edit')
+
+        delete_link = link_to I18n.t('active_admin.delete'), resource_path(resource), class: 'delete_link', title: I18n.t('active_admin.delete'),
+                method: :delete, data: {confirm: I18n.t('active_admin.delete_confirmation')}
+
+        edit_link + delete_link
+      end
+      tr class: 'action_items' do
+        link_to('新建', new_admin_main_event_event_intro_path(resource),
+                   class: :button)
+      end
+    end
+  end
 end

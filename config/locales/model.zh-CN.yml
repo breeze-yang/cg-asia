@@ -4,6 +4,7 @@
       admin_user: "管理员"
       comment: "管理员备注"
       main_event: "主赛"
+      event_intro: "赛事介绍"
     attributes:
       admin_user:
         email: "邮箱"
@@ -20,6 +21,12 @@
         prize_pool: "奖池"
         begin_time: "开始时间"
         end_time: "结束时间"
+      event_intro:
+        main_event: "主赛"
+        about_title: "简短标题"
+        title: "标题"
+        description: "描述"
+        image: "图片"
 
     format: "%{attribute}%{message}"
     messages:
