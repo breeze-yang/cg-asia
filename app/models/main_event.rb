@@ -1,6 +1,8 @@
 class MainEvent < ApplicationRecord
   mount_uploader :event_pdf, PdfUploader
   has_many :event_intros
+  has_many :event_schedules
+  has_many :event_structures
 
   after_initialize do
     self.begin_time ||= Time.current

@@ -8,6 +8,9 @@ class CreateMainEvent < ActiveRecord::Migration[5.2]
       t.string :prize_pool, comment: '奖池'
       t.string :event_pdf, comment: 'pdf文档'
       t.boolean :published, default: false, comment: '发布在官网可见'
+      t.text :structure_desc, comment: '盲注结构描述'
+      t.text :prize_desc, comment: 'prize描述'
+      t.text :location_desc, comment: 'location描述'
     end
   end
 end

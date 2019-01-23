@@ -5,7 +5,10 @@ context.instance_eval do
   column(:prize_pool)
   column(:begin_time)
   column(:end_time)
-  actions
+  column(:published)
+  actions do |event|
+    link_to '发布', publish_admin_main_event_url(event), method: :post
+  end
 end
 
 

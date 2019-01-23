@@ -5,6 +5,8 @@
       comment: "管理员备注"
       main_event: "主赛"
       event_intro: "赛事介绍"
+      event_schedule: "赛程"
+      event_structure: "盲注结构"
     attributes:
       admin_user:
         email: "邮箱"
@@ -21,12 +23,25 @@
         prize_pool: "奖池"
         begin_time: "开始时间"
         end_time: "结束时间"
+        published: "发布在官网"
       event_intro:
         main_event: "主赛"
         about_title: "简短标题"
         title: "标题"
         description: "描述"
         image: "图片"
+      event_schedule:
+        main_event: "主赛"
+        date_time: "Date & Time"
+        name: "名称"
+        buyin: "买入"
+        chip: "筹码"
+        guarantee: "保底池"
+      event_structure:
+        level: '级别'
+        ante: '前注'
+        is_content: '是否是文本类型'
+        content: '文本'
 
     format: "%{attribute}%{message}"
     messages:

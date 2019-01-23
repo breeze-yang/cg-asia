@@ -1,0 +1,88 @@
+<div class="tournament-bg tournament">
+  <div class="container tournament-margin">
+    <div class="row tournament-base">
+      <div class="col-lg-4 tournament-title-label">
+        <div>TOURNAMENT</div>
+        <div class="tournament-spacer"></div>
+      </div>
+
+      <div class="col-lg-7">
+        <div class="tournament-title"><%= @main_event.title %></div>
+        <div class="tournament-attrs">
+          <p><%= @main_event.location_name %></p>
+          <p><%= "#{@main_event.begin_time.to_date} — #{@main_event.end_time.to_date}" %></p>
+          <p>PRIZE POOL: <%= @main_event.prize_pool %></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="tournament">
+  <ul class="nav tournament-nav nav-justified" role="tablist">
+    <li class="nav-item">
+      <a class="nav-link active" data-toggle="pill" href="#introduction">
+        INTRODUCTION
+        <div class="spacer"></div>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="pill" href="#main_event">
+        MAIN EVENT
+        <div class="spacer"></div>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="pill" href="#side_event">
+        SIDE EVENT
+        <div class="spacer"></div>
+      </a>
+    </li>
+  </ul>
+
+  <div class="tour-content">
+    <div class="tab-content container">
+      <div id="introduction" class="tab-pane active">
+        <% @main_event.event_intros.each do |intro| %>
+          <div class="tour-event-intro">
+            <div class="tour-about-title">
+              <%= intro.about_title %>
+            </div>
+            <div class="row">
+              <div class="col-lg-3 tour-title">
+                <%= intro.title %>
+              </div>
+              <div class="col-lg-5 tour-description">
+                <%= intro.description %>
+              </div>
+              <div class="col-lg-4">
+                <%= image_tag intro.image_url, class: 'img-fluid' %>
+              </div>
+            </div>
+          </div>
+        <% end %>
+      </div>
+      <div id="main_event" class="container tab-pane fade">
+        <h3>Menu 1</h3>
+        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat.</p>
+      </div>
+      <div id="side_event" class="container tab-pane fade">
+        <h3>Menu 2</h3>
+        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
+          aperiam.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--<script>-->
+<!--  $(".navbar-cg").addClass("home-nav-scroll");-->
+<!--  $(window).scroll(function () {-->
+<!--    if ($(".navbar").offset().top > 50) {-->
+<!--      $(".navbar-cg").removeClass("home-nav-scroll");-->
+<!--    } else {-->
+<!--      $(".navbar-cg").addClass("home-nav-scroll");-->
+<!--    }-->
+<!--  })-->
+<!--</script>-->
