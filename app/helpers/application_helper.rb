@@ -10,4 +10,14 @@ module ApplicationHelper
       end
     end
   end
+
+  def render_structure_tds(structure)
+    if structure.is_content
+      content_tag('td', structure.content, class: 'highlight', colspan: 3)
+    else
+      "<td>#{structure.level.to_i}</td>
+       <td>#{structure.ante}</td>
+       <td>#{structure.blinds}</td>"
+    end
+  end
 end

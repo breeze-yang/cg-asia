@@ -1,6 +1,6 @@
 @import "client/vars";
 .tournament{
-  font-family: TwCenMT-Bold;
+  font-family: Helvetica;
 }
 
 .tournament-bg {
@@ -41,6 +41,7 @@
 }
 
 .tournament-attrs p{
+  font-family: TwCenMT-Bold;
   margin-bottom: 10px;
   font-size: 15px;
 }
@@ -94,6 +95,99 @@
 
 .tour-description{
   font-size: 16px;
-  font-family: Helvetica;
   color:rgba(20,23,28,1);
 }
+
+// main event ----begin----
+.nav-main-event{
+  border: 1px solid rgba(217,217,217,1);
+  margin-bottom: 20px;
+
+  .nav-link{
+    color: rgba(20,23,28,1);
+    background: rgba(255,255,255,1);
+    font-size: 16px;
+    padding: 7px 12px;
+  }
+
+  a.active{
+    color: rgba(255,255,255,1);
+    background: rgba(20,23,28,1);
+  }
+
+  .spacer{
+    width: 1px;
+    height: 20px;
+    margin: auto;
+    background: rgba(224,224,224,1);
+  }
+}
+
+.main-event-schedule{
+  background: rgba(32,34,37,1);
+  color: rgba(255,255,255,1);
+
+  .schedule-item:nth-child(odd) {
+    background:rgba(25,27,31,1);
+  }
+
+  .schedule-item{
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+
+  .schedule-title{
+    font-size: 17px;
+    font-family: Helvetica-Bold;
+    margin-bottom: 10px;
+  }
+  .schedule-attr{
+    font-size: 14px;
+    color: rgba(234,234,234,1);
+  }
+}
+
+.tour-table{
+  padding: 0;
+  thead{
+    background: rgba(245,206,133,1);
+    font-family: Helvetica-Bold;
+    font-weight: bold;
+    color: rgba(36,36,36,1);
+  }
+
+  tbody{
+    background: rgba(32,34,37,1);
+    color: rgba(234,234,234,1);
+  }
+
+  .table th, .table td {
+    border: none;
+  }
+
+  .highlight{
+    background: rgba(25,27,31,1);
+    color: rgba(216,179,110,1);
+  }
+}
+
+.structure-table{
+  th, td{
+    padding-left: 35px;
+  }
+}
+
+.nav-prizes{
+  border: 1px solid rgba(217,217,217,1);
+
+  .nav-link{
+    color: rgba(20,23,28,1);
+  }
+
+  a.active{
+    color: rgba(255,255,255,1);
+    background: rgba(20,23,28,1);
+  }
+}
+
+

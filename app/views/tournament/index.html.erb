@@ -41,8 +41,8 @@
   </ul>
 
   <div class="tour-content">
-    <div class="tab-content container">
-      <div id="introduction" class="tab-pane active">
+    <div class="tab-content">
+      <div id="introduction" class="tab-pane active container">
         <% @main_event.event_intros.each do |intro| %>
           <div class="tour-event-intro">
             <div class="tour-about-title">
@@ -62,27 +62,10 @@
           </div>
         <% end %>
       </div>
-      <div id="main_event" class="container tab-pane fade">
-        <h3>Menu 1</h3>
-        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat.</p>
-      </div>
+      <%= render 'main_event' %>
       <div id="side_event" class="container tab-pane fade">
-        <h3>Menu 2</h3>
-        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
-          aperiam.</p>
+       
       </div>
     </div>
   </div>
 </div>
-
-<!--<script>-->
-<!--  $(".navbar-cg").addClass("home-nav-scroll");-->
-<!--  $(window).scroll(function () {-->
-<!--    if ($(".navbar").offset().top > 50) {-->
-<!--      $(".navbar-cg").removeClass("home-nav-scroll");-->
-<!--    } else {-->
-<!--      $(".navbar-cg").addClass("home-nav-scroll");-->
-<!--    }-->
-<!--  })-->
-<!--</script>-->
