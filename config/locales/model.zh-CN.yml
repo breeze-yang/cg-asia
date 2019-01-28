@@ -7,6 +7,7 @@
       event_intro: "赛事介绍"
       event_schedule: "赛程"
       event_structure: "盲注结构"
+      event_prize: "奖池分配"
     attributes:
       admin_user:
         email: "邮箱"
@@ -42,6 +43,10 @@
         ante: '前注'
         is_content: '是否是文本类型'
         content: '文本'
+      event_prize:
+        is_mobile: '是否在手机端显示'
+        level: '排序'
+        name: '名称'
 
     format: "%{attribute}%{message}"
     messages:

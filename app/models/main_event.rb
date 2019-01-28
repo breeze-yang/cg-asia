@@ -3,6 +3,7 @@ class MainEvent < ApplicationRecord
   has_many :event_intros
   has_many :event_schedules
   has_many :event_structures
+  has_many :event_prizes
 
   after_initialize do
     self.begin_time ||= Time.current

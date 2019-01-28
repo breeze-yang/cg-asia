@@ -1,9 +1,0 @@
-= semantic_form_for [:admin, @event_intro] do |f|
-  = f.semantic_errors *f.object.errors.keys
-  = f.inputs do
-    = f.input :main_event, collection: [[@main_event.title, @main_event.id]], prompt: true
-    = f.input :about_title
-    = f.input :title
-    = f.input :description
-    = f.input :image
-  = f.submit data: { disable_with: '请稍等...' }
