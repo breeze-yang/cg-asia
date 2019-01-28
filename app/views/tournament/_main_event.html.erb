@@ -1,0 +1,72 @@
+<div id="main_event" class=" tab-pane fade">
+  <div class="container">
+    <ul class="nav nav-main-event nav-justified" role="tablist">
+      <li class="nav-item">
+        <a class="nav-link active" data-toggle="pill" href="#schedule">Schedule</a>
+      </li>
+      <li class="spacer"></li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="pill" href="#structure">Structure</a>
+      </li>
+      <li class="spacer"></li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="pill" href="#prize">Prize</a>
+      </li>
+      <li class="spacer"></li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="pill" href="#location">Location</a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div id="schedule" class="tab-pane active main-event-schedule">
+      <% @main_event.event_schedules.each do |schedule| %>
+        <div class="row schedule-item">
+          <div class="col-3" style="padding-left: 45px; padding-right: 0">
+            <%= schedule.date_time.to_formatted_s(:short) %>
+          </div>
+          <div class="col-9">
+            <div class="schedule-title"><%= schedule.name %></div>
+            <div class="schedule-attr">Buyin: <%= schedule.buyin %></div>
+            <div class="schedule-attr">Chip: <%= schedule.chip %></div>
+            <div class="schedule-attr">Guarantee: <%= schedule.guarantee %></div>
+          </div>
+        </div>
+      <% end %>
+    </div>
+    <div id="structure" class="container tab-pane fade"><br>
+      <div class="row schedule-item">
+        <div class="col-lg-6 structure-desc">
+          <%= sanitize @main_event.structure_desc %>
+        </div>
+        <div class="col-lg-6 tour-table structure-table">
+          <table class="table">
+            <thead>
+            <tr>
+              <th>Level</th>
+              <th>Ante</th>
+              <th>Blinds</th>
+            </tr>
+            </thead>
+            <tbody>
+            <% @main_event.event_structures.each do |structure| %>
+              <tr>
+                <%= render_structure_tds(structure).html_safe %>
+              </tr>
+            <% end %>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <%= render 'main_event_prize' %>
+    <div id="location" class="container tab-pane fade"><br>
+      <h3>Menu 2</h3>
+      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
+        aperiam.</p>
+    </div>
+  </div>
+</div>
+

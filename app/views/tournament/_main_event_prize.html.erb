@@ -1,0 +1,22 @@
+<div id="prize" class="tab-pane fade">
+  <div style="padding: 0 30px">
+    <ul class="nav nav-justified nav-prizes" role="tablist">
+      <% @main_event.prizes_in_mobile.each_with_index do |prize, i| %>
+
+        <li class="nav-item">
+          <a class="nav-link <%= 'active' if i == 0 %>" data-toggle="pill" href="#<%= prize.name %>">
+            <%= prize.name %>
+          </a>
+        </li>
+      <% end %>
+    </ul>
+  </div>
+
+  <div class="tab-content">
+      <% @main_event.prizes_in_mobile.each_with_index do |prize, i| %>
+      <div id="<%= prize.name %>" class="tab-pane <%= 'active' if i == 0 %>">
+        <%= raw prize.prizes_table %>
+      </div>
+      <% end %>
+  </div>
+</div>
