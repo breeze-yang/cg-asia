@@ -5,4 +5,5 @@ Rails.application.routes.draw do
   root 'home#index'
   get '/cg_asia', to: 'cg_asia#index'
   get '/tournament', to: 'tournament#index'
+  resources :admin_images, only: [:create]
 end

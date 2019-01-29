@@ -38,7 +38,7 @@
     </div>
     <div id="structure" class="container tab-pane fade"><br>
       <div class="row schedule-item">
-        <div class="col-lg-6 structure-desc">
+        <div class="col-lg-6 gc-html-container">
           <%= sanitize @main_event.structure_desc %>
         </div>
         <div class="col-lg-6 tour-table structure-table">
@@ -62,8 +62,8 @@
       </div>
     </div>
     <%= render 'main_event_prize' %>
-    
-    <div id="location" class="container tab-pane fade"><br>
+
+    <div id="location" class="container tab-pane fade gc-html-container"><br>
       <%= sanitize @main_event.location_desc %>
     </div>
   </div>
