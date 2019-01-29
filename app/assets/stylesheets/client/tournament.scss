@@ -149,6 +149,8 @@
 
 .tour-table{
   padding: 0;
+  background: rgba(32,34,37,1);
+
   thead{
     background: rgba(245,206,133,1);
     font-family: Helvetica-Bold;
@@ -179,6 +181,7 @@
 
 .nav-prizes{
   border: 1px solid rgba(217,217,217,1);
+  margin-bottom: 30px;
 
   .nav-link{
     color: rgba(20,23,28,1);
@@ -187,6 +190,24 @@
   a.active{
     color: rgba(255,255,255,1);
     background: rgba(20,23,28,1);
+  }
+}
+
+.prize-table{
+  table{
+    text-align: center;
+    font-size: 14px;
+    width: 100%;
+  }
+
+  tbody tr:nth-child(odd) {
+    background:rgba(25,27,31,1);
+  }
+
+  th, td{
+    padding: 5px;
+    border: none !important;
+    margin: 0 !important;
   }
 }
 
