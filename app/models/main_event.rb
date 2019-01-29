@@ -1,5 +1,6 @@
 class MainEvent < ApplicationRecord
   mount_uploader :event_pdf, PdfUploader
+  has_many :side_events
   has_many :event_intros
   has_many :event_schedules
   has_many :event_structures, -> { order(level: :asc) }

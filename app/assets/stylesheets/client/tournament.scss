@@ -211,4 +211,23 @@
   }
 }
 
+.side-event-item{
+  background: rgba(32,34,37,1);
+  color: rgba(255,255,255,1);
+  padding: 20px 0;
+  margin: 0;
 
+  .name{
+    color:rgba(221,184,113,1);
+    padding-bottom: 10px;
+    font-size: 17px;
+  }
+
+  .attr{
+    font-size: 15px;
+  }
+}
+
+.side-event-item:nth-child(odd) {
+  background:rgba(25,27,31,1);
+}

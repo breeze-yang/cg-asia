@@ -63,8 +63,27 @@
         <% end %>
       </div>
       <%= render 'main_event' %>
-      <div id="side_event" class="container tab-pane fade">
-
+      <div id="side_event" class="tab-pane fade">
+        <% @main_event.side_events.each do |side_event| %>
+          <div class="row side-event-item">
+            <div class="col-3" style="padding-left: 45px; padding-right: 0">
+              <%= side_event.date_time.to_formatted_s(:short) %>
+            </div>
+            <div class="col-8">
+              <div class="name">
+                <%= side_event.name %>
+                <span class="float-right">
+                  <a href="<%= side_event.event_pdf_url %>" target="_blank">
+                    <%= image_tag 'tournament/pdf_download.png', height: 20 %>
+                  </a>
+                </span>
+              </div>
+              <div class="attr">Buyin: <%= side_event.buyin %></div>
+              <div class="attr">Chip: <%= side_event.chip %></div>
+              <div class="attr">Guarantee: <%= side_event.guarantee %></div>
+            </div>
+          </div>
+        <% end %>
       </div>
     </div>
   </div>

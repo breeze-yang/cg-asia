@@ -8,6 +8,7 @@
       event_schedule: "赛程"
       event_structure: "盲注结构"
       event_prize: "奖池分配"
+      side_event: "边赛"
     attributes:
       admin_user:
         email: "邮箱"
@@ -47,10 +48,14 @@
         is_mobile: '是否在手机端显示'
         level: '排序'
         name: '名称'
+      side_event:
+        main_event: "主赛"
+        date_time: "Date & Time"
+        name: "名称"
+        buyin: "买入"
+        chip: "筹码"
+        guarantee: "保底池"
 
     format: "%{attribute}%{message}"
     messages:
       blank: '不能为空'
-
-
-
