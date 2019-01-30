@@ -1,0 +1,66 @@
+@import "client/vars";
+@media (min-width: $breakpoints-lg) {
+  .tournament-bg {
+    background: url(asset-path('tournament/tournament_bg_pc.png')) no-repeat center center;
+    height: 75%;
+  }
+
+  .tournament-margin{
+    margin-top: 350px;
+  }
+
+  .tournament-spacer{
+    width: 130%;
+    margin-top: 20px;
+    margin-left: 0;
+  }
+
+  .tournament-title-label{
+    text-align: right;
+  }
+
+  .tournament-nav {
+    display: none;
+  }
+
+  .main-event-label{
+    font-size: 45px;
+    font-family: TwCenMT-Bold;
+    font-weight: bold;
+    color: rgba(20,23,28,1);
+    padding-top: 60px;
+    padding-bottom: 60px;
+    display: block !important;
+  }
+
+  #main_event, #side_event{
+    display: block;
+    opacity: 1;
+  }
+
+  .main-event-pdf-download a{
+    font-size: 17px;
+    font-family: Helvetica-Bold;
+    font-weight: bold;
+    color: rgba(20,23,28,1);
+  }
+
+  .nav-main-event {
+    width: 60%;
+    border: none;
+    margin-bottom: 50px;
+
+    .nav-link{
+      background: none;
+      padding: 15px;
+      font-size: 19px;
+      color: rgba(149,149,150,1);
+    }
+  }
+
+  .tour-table{
+    padding-right: 15px;
+    padding-left: 15px;
+    background: none;
+  }
+}

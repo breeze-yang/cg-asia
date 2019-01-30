@@ -1,0 +1,42 @@
+<% if is_mobile? %>
+  <div id="schedule" class="tab-pane active main-event-schedule">
+    <% @main_event.event_schedules.each do |schedule| %>
+      <div class="row schedule-item">
+        <div class="col-3" style="padding-left: 45px; padding-right: 0">
+          <%= schedule.date_time.to_formatted_s(:short) %>
+        </div>
+        <div class="col-9">
+          <div class="schedule-title"><%= schedule.name %></div>
+          <div class="schedule-attr">Buyin: <%= schedule.buyin %></div>
+          <div class="schedule-attr">Chip: <%= schedule.chip %></div>
+          <div class="schedule-attr">Guarantee: <%= schedule.guarantee %></div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+<% else %>
+  <div id="schedule" class="tab-pane active container tour-table schedule-table table-responsive">
+    <table>
+      <thead>
+      <tr>
+        <th>Date&Time</th>
+        <th>Event</th>
+        <th>Buyin</th>
+        <th>Chip</th>
+        <th>Guarantee</th>
+      </tr>
+      </thead>
+      <tbody>
+      <% @main_event.event_schedules.each do |schedule| %>
+        <tr>
+          <td><%= schedule.date_time.to_formatted_s(:short) %></td>
+          <td style="color: rgba(216,179,110,1);"><%= schedule.name %></td>
+          <td><%= schedule.buyin %></td>
+          <td><%= schedule.chip %></td>
+          <td><%= schedule.guarantee %></td>
+        </tr>
+      <% end %>
+      </tbody>
+    </table>
+  </div>
+<% end %>

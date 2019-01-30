@@ -7,6 +7,7 @@ class CreateMainEvent < ActiveRecord::Migration[5.2]
       t.datetime :end_time, comment: '结束时间'
       t.string :prize_pool, comment: '奖池'
       t.string :event_pdf, comment: 'pdf文档'
+      t.string :pdf_name
       t.boolean :published, default: false, comment: '发布在官网可见'
       t.text :structure_desc, comment: '盲注结构描述'
       t.text :prize_desc, comment: 'prize描述'

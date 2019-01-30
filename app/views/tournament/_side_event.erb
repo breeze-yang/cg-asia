@@ -1,0 +1,58 @@
+<div id="side_event" class="tab-pane fade">
+  <div class="container main-event-label d-none">
+    SIDE EVENT.
+  </div>
+  <% if is_mobile? %>
+    <% @main_event.side_events.each do |side_event| %>
+      <div class="row side-event-item">
+        <div class="col-3" style="padding-left: 45px; padding-right: 0">
+          <%= side_event.date_time.to_formatted_s(:short) %>
+        </div>
+        <div class="col-8">
+          <div class="name">
+            <%= side_event.name %>
+            <span class="float-right">
+                    <a href="<%= side_event.event_pdf_url %>" target="_blank">
+                      <%= image_tag 'tournament/pdf_download.png', height: 20 %>
+                    </a>
+                  </span>
+          </div>
+          <div class="attr">Buyin: <%= side_event.buyin %></div>
+          <div class="attr">Chip: <%= side_event.chip %></div>
+          <div class="attr">Guarantee: <%= side_event.guarantee %></div>
+        </div>
+      </div>
+    <% end %>
+  <% else %>
+    <div class="container tour-table table-responsive side-event-table">
+      <table>
+        <thead>
+        <tr>
+          <th>Date&Time</th>
+          <th>Event</th>
+          <th>Buyin</th>
+          <th>Chip</th>
+          <th>Guarantee</th>
+          <th>Detail</th>
+        </tr>
+        </thead>
+        <tbody>
+        <% @main_event.side_events.each do |side_event| %>
+          <tr>
+            <td><%= side_event.date_time.to_formatted_s(:short) %></td>
+            <td style="color: rgba(216,179,110,1);"><%= side_event.name %></td>
+            <td><%= side_event.buyin %></td>
+            <td><%= side_event.chip %></td>
+            <td><%= side_event.guarantee %></td>
+            <td>
+              <a href="<%= side_event.event_pdf_url %>" target="_blank">
+                <%= image_tag 'tournament/pdf_download.png', height: 20 %>
+              </a>
+            </td>
+          </tr>
+        <% end %>
+        </tbody>
+      </table>
+    </div>
+  <% end %>
+</div>

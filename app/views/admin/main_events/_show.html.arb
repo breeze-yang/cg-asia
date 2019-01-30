@@ -5,7 +5,7 @@ context.instance_eval do
     row(:prize_pool)
     row(:begin_time)
     row(:end_time)
-    row(:event_pdf) { |event| link_to 'PDF', event.event_pdf_url, target: '_blank' }
+    row(:event_pdf) { |event| link_to event.pdf_name, event.event_pdf_url, target: '_blank' }
     row(:published)
   end
 

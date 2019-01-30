@@ -6,6 +6,7 @@ class MainEvent < ApplicationRecord
   has_many :event_structures, -> { order(level: :asc) }
   has_many :event_prizes
   has_many :prizes_in_mobile, -> { where(is_mobile: true).order(level: :asc) }, class_name: 'EventPrize'
+  has_one :prizes_in_pc, -> { where(is_mobile: false) }, class_name: 'EventPrize'
 
   after_initialize do
     self.begin_time ||= Time.current

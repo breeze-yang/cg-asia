@@ -1,8 +1,8 @@
 ActiveAdmin.register MainEvent do
   config.sort_order = 'published_desc'
 
-  permit_params :title, :location_name, :begin_time, :end_time, :prize_pool, :event_pdf,
-                :structure_desc, :prize_desc, :location_desc
+  permit_params :title, :location_name, :begin_time, :end_time, :prize_pool,
+                :pdf_name, :event_pdf, :structure_desc, :prize_desc, :location_desc
   form partial: 'form'
 
   index do

@@ -1,11 +1,11 @@
 <div class="tournament-bg tournament">
   <div class="container tournament-margin">
     <div class="row tournament-base">
-      <div class="col-lg-4 tournament-title-label">
+      <div class="col-lg-3 tournament-title-label">
         <div>TOURNAMENT</div>
         <div class="tournament-spacer"></div>
       </div>
-
+      <div class="col-lg-1"></div>
       <div class="col-lg-7">
         <div class="tournament-title"><%= @main_event.title %></div>
         <div class="tournament-attrs">
@@ -42,49 +42,9 @@
 
   <div class="tour-content">
     <div class="tab-content">
-      <div id="introduction" class="tab-pane active container">
-        <% @main_event.event_intros.each do |intro| %>
-          <div class="tour-event-intro">
-            <div class="tour-about-title">
-              <%= intro.about_title %>
-            </div>
-            <div class="row">
-              <div class="col-lg-3 tour-title">
-                <%= intro.title %>
-              </div>
-              <div class="col-lg-5 tour-description">
-                <%= intro.description %>
-              </div>
-              <div class="col-lg-4">
-                <%= image_tag intro.image_url, class: 'img-fluid' %>
-              </div>
-            </div>
-          </div>
-        <% end %>
-      </div>
+      <%= render 'main_event_intro' %>
       <%= render 'main_event' %>
-      <div id="side_event" class="tab-pane fade">
-        <% @main_event.side_events.each do |side_event| %>
-          <div class="row side-event-item">
-            <div class="col-3" style="padding-left: 45px; padding-right: 0">
-              <%= side_event.date_time.to_formatted_s(:short) %>
-            </div>
-            <div class="col-8">
-              <div class="name">
-                <%= side_event.name %>
-                <span class="float-right">
-                  <a href="<%= side_event.event_pdf_url %>" target="_blank">
-                    <%= image_tag 'tournament/pdf_download.png', height: 20 %>
-                  </a>
-                </span>
-              </div>
-              <div class="attr">Buyin: <%= side_event.buyin %></div>
-              <div class="attr">Chip: <%= side_event.chip %></div>
-              <div class="attr">Guarantee: <%= side_event.guarantee %></div>
-            </div>
-          </div>
-        <% end %>
-      </div>
+      <%= render 'side_event' %>
     </div>
   </div>
 </div>

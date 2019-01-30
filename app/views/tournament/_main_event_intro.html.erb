@@ -1,0 +1,23 @@
+<div id="introduction" class="tab-pane active container">
+  <div class="main-event-label d-none">
+    INTRODUCTION.
+  </div>
+  <% @main_event.event_intros.each do |intro| %>
+    <div class="tour-event-intro">
+      <div class="tour-about-title">
+        <%= intro.about_title %>
+      </div>
+      <div class="row">
+        <div class="col-lg-3 tour-title">
+          <%= intro.title %>
+        </div>
+        <div class="col-lg-5 tour-description">
+          <%= intro.description %>
+        </div>
+        <div class="col-lg-4">
+          <%= image_tag intro.image_url, class: 'img-fluid' %>
+        </div>
+      </div>
+    </div>
+  <% end %>
+</div>

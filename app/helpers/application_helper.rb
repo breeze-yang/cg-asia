@@ -1,4 +1,10 @@
 module ApplicationHelper
+  def is_mobile?
+    return true if request.user_agent =~ /Mobile/
+
+    false
+  end
+
   def main_event_sidebar_generator(context)
     context.instance_eval do
       ul do
