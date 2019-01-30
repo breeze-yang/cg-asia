@@ -3,3 +3,12 @@
     max-width: 100%;
   }
 }
+
+#back_to_top {
+  z-index: 999;
+  display: none;
+  cursor: pointer;
+  position: fixed;
+  bottom: 50px;
+  right: 5%;
+}

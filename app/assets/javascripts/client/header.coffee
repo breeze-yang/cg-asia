@@ -14,6 +14,12 @@ document.addEventListener "turbolinks:load", ->
       $(".navbar-cg").removeClass("home-nav-scroll");
     else
       $(".navbar-cg").addClass("home-nav-scroll");
+
+    height = $(window).scrollTop();
+    if (height > 200)
+      $('#back_to_top').fadeIn();
+    else
+      $('#back_to_top').fadeOut();
   )
 
   $(".navbar-toggler-cg").on 'click', (e) ->
@@ -23,3 +29,10 @@ document.addEventListener "turbolinks:load", ->
       $(this).html('MENU');
     else
       $(this).html('CLOSE');
+
+  $("#back_to_top").click((event) ->
+    event.preventDefault();
+    $("html, body").animate({scrollTop: 0}, "slow");
+    return false;
+  )
+
