@@ -10,6 +10,7 @@
       event_prize: "奖池分配"
       side_event: "边赛"
       info: "资讯"
+      video: "视频"
     attributes:
       admin_user:
         email: "邮箱"
@@ -57,6 +58,13 @@
         buyin: "买入"
         chip: "筹码"
         guarantee: "保底池"
+      video:
+         title: '标题'
+         image: '缩略图'
+         intro: '简介'
+         url: '视频链接'
+         duration: '视频时长'
+         published: '是否发布'
       info:
         title: '标题'
         image: '缩略图'
