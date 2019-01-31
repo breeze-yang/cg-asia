@@ -1,7 +1,7 @@
 ActiveAdmin.register EventPrize do
   config.sort_order = 'level_asc'
   config.filters = false
-  belongs_to :main_event, optional: true
+  belongs_to :main_event
 
   permit_params :level, :name, :prizes_table, :is_mobile, :main_event_id
   form partial: 'form'

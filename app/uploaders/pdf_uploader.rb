@@ -1,4 +1,6 @@
 class PdfUploader < CarrierWave::Uploader::Base
+  storage :tencent_cos
+
   def store_dir
     "uploads/#{model.class.to_s.underscore}/pdf"
   end

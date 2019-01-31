@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '2.5.0'
+ruby '2.5.3'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.2'
@@ -50,6 +50,7 @@ gem 'simditor'
 
 # 文件上传处理 相关
 gem 'carrierwave', '~> 1.0'
+gem 'carrierwave-tencent_cos'
 gem 'mini_magick', '~> 4.9', '>= 4.9.2'
 
 group :development, :test do

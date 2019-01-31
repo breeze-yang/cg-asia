@@ -2,6 +2,7 @@ class ImgBaseUploader < CarrierWave::Uploader::Base
   # Include RMagick or MiniMagick support:
   include CarrierWave::MiniMagick
   process resize_to_limit: [1080, nil]
+  storage :tencent_cos
 
   def store_dir
     "uploads/#{model.class.to_s.underscore}"
