@@ -4,7 +4,8 @@ class CreateInfos < ActiveRecord::Migration[5.2]
       t.string :title
       t.string :image
       t.string :intro
-      t.string :main_body
+      t.text :main_body
+      t.boolean :published, default: false
       t.timestamps
     end
   end

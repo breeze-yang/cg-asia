@@ -9,6 +9,7 @@
       event_structure: "盲注结构"
       event_prize: "奖池分配"
       side_event: "边赛"
+      info: "资讯"
     attributes:
       admin_user:
         email: "邮箱"
@@ -56,6 +57,12 @@
         buyin: "买入"
         chip: "筹码"
         guarantee: "保底池"
+      info:
+        title: '标题'
+        image: '缩略图'
+        intro: '简介'
+        published: '是否发布'
+        main_body: '正文'
 
     format: "%{attribute}%{message}"
     messages:
