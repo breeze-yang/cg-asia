@@ -1,0 +1,8 @@
+$('.news-loading').addClass("d-none")
+$('.new-list').append('<%= j render('new-item') %>');
+<% if @news.next_page %>
+  $('.pagination').replaceWith('<%= j paginate(@news) %>');
+<% else %>
+  $('.pagination').remove();
+  $('.footer-cg').removeClass('d-none')
+<% end %>

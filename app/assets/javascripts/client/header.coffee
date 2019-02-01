@@ -1,13 +1,4 @@
 document.addEventListener "turbolinks:load", ->
-#  $(".navbar-cg").addClass("home-nav-scroll");
-#  $(window).scroll(function () {
-#    if ($(".navbar").offset().top > 50) {
-#      $(".navbar-cg").removeClass("home-nav-scroll");
-#  } else
-#  {
-#    $(".navbar-cg").addClass("home-nav-scroll");
-#  }
-#  })
   $(".navbar-cg").addClass("home-nav-scroll");
   $(window).scroll(->
     if ($(".navbar").offset().top > 50)

@@ -6,4 +6,5 @@ Rails.application.routes.draw do
   get '/cg_asia', to: 'cg_asia#index'
   get '/tournament', to: 'tournament#index'
   resources :admin_images, only: [:create]
+  resources :news, only: [:index, :show]
 end
