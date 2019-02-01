@@ -19,7 +19,7 @@
       </li>
       <li class="nav-item">
         <a class="nav-link" href="/news">NEWS</a>
-        <div class="<%= 'nav-link-active' if current_page?('/news') %>"></div>
+        <div class="<%= 'nav-link-active' if controller.controller_name == 'news' %>"></div>
       </li>
       <li class="nav-item">
         <a class="nav-link" href=/videos>VIDEOS</a>

@@ -41,7 +41,10 @@
 
   .new-title{
     font-size: 15px;
-    margin: 15px 0;
+    margin: 10px 0;
+    font-family: Helvetica-Bold;
+    font-weight: bold;
+    color: rgba(20,23,28,1);
   }
 }
 
@@ -86,5 +89,24 @@
       font-size: 16px;
       color:rgba(120,120,120,1);
     }
+  }
+}
+
+
+
+// new detail
+.new-detail{
+  margin-top: 50px;
+  .new-title{
+    font-family:Helvetica-Bold;
+    font-weight:bold;
+    color:rgba(20,23,28,1);
+  }
+
+  .new-time{
+    font-family: Helvetica;
+    color: rgba(109,109,109,1);
+    font-size: 14px;
+    padding: 10px 0 20px;
   }
 }

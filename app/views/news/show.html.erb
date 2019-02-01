@@ -1,0 +1,12 @@
+<%= render 'news_bg' %>
+<div class="container new-detail">
+  <h6 class="new-title">
+    <%= @new.title %>
+  </h6>
+  <div class="new-time">
+    <%= @new.created_at.to_formatted_s %>
+  </div>
+  <div class="gc-html-container">
+    <%= sanitize @new.main_body %>
+  </div>
+</div>
