@@ -1,0 +1,26 @@
+<% @videos.each do |video| %>
+  <div class="row video-item">
+    <div class="col-lg-4">
+      <%= image_tag video.image_url, class: 'img-fluid' %>
+      <%= image_tag 'video_play.png', height: 50, class: 'video-play', video_url: video.url %>
+    </div>
+    <div class="col-lg-8 video-attrs">
+      <div class="video-duration"><%= video.duration %></div>
+      <div class="video-title"><%= video.title %></div>
+      <div class="video-intro"><%= video.intro %></div>
+    </div>
+  </div>
+
+  <div class="videos-modal-over d-none"></div>
+  <div class="video-modal d-none">
+    <div class="video-close video-close-in-mobile d-lg-none">
+      <%= image_tag 'close_icon.png', height: 30 %>
+    </div>
+    <div class="video-container">
+      <div class="video-close video-close-in-pc d-none">
+        <%= image_tag 'close_icon.png', height: 30 %>
+      </div>
+      <div class="video-player-container"></div>
+    </div>
+  </div>
+<% end %>

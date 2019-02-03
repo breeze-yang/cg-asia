@@ -97,6 +97,7 @@
 // new detail
 .new-detail{
   margin-top: 50px;
+  margin-bottom: 70px;
   .new-title{
     font-family:Helvetica-Bold;
     font-weight:bold;
@@ -107,6 +108,12 @@
     font-family: Helvetica;
     color: rgba(109,109,109,1);
     font-size: 14px;
-    padding: 10px 0 20px;
+    padding: 10px 0 40px;
+  }
+}
+
+@media (min-width: $breakpoints-lg) {
+  .new-title{
+    font-size: 29px;
   }
 }

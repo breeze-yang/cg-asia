@@ -7,4 +7,5 @@ Rails.application.routes.draw do
   get '/tournament', to: 'tournament#index'
   resources :admin_images, only: [:create]
   resources :news, only: [:index, :show]
+  resources :videos, only: [:index, :show]
 end

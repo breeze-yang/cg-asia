@@ -1,0 +1,13 @@
+<%= render 'videos_bg' %>
+
+<div class="videos-content">
+  <div class="container">
+    <div class="video-list">
+      <%= render 'video_item' %>
+    </div>
+    <div class="d-none1 videos-pagination">
+      <%= paginate @videos %>
+    </div>
+    <div class="videos-loading d-none">LOADING…</div>
+  </div>
+</div>
