@@ -1,6 +1,16 @@
 document.addEventListener "turbolinks:load", ->
+  if $('.pagination').length && $('.video-list').length
+    $('.footer-cg').addClass('d-none')
+    $(window).scroll ->
+      url = $('.pagination .next a').attr('href')
+      if url && $(window).scrollTop() > $(document).height() - $(window).height() - 50
+        $('.videos-loading').removeClass("d-none")
+        $('.pagination').text("") # 避免下拉多次加载同一页数据
+        $.getScript(url)
+    $(window).scroll()
+    
   if $('.video-list').length
-    $('.video-list .video-play').bind('click', ->
+    $('.video-list').on('click', '.video-play', ->
       $('.videos-modal-over').removeClass('d-none')
       $('.video-modal').removeClass('d-none')
       video_html = "<video controls autoplay src='#{$(this).attr('video_url')}'>
@@ -21,13 +31,3 @@ document.addEventListener "turbolinks:load", ->
       $('.video-modal').addClass('d-none')
       $('.video-player-container').html('')
     )
-#    $('.video-modal video').bind('click', ->
-#      alert('video')
-#    )
-#    $(document).mousedown( (e)->
-#      console.log(e.target)
-#      console.log($(e.target).parent(".video-modal"))
-#      if($(e.target).parent(".video-modal").length==0)
-#        alert('test')
-#
-#    )

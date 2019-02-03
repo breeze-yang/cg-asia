@@ -28,7 +28,7 @@
     font-size: 14px;
   }
 
-  .video-play{
+  .video-play-img{
     margin-top: -100px;
     margin-left: 10px;
     cursor: pointer;
@@ -70,6 +70,12 @@
     top: 35px;
     right: 20px;
   }
+}
+
+.videos-loading{
+  font-size: 20px;
+  text-align: center;
+  padding: 20px;
 }
 
 @media (min-width: $breakpoints-lg) {

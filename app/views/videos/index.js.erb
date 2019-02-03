@@ -1,0 +1,8 @@
+$('.videos-loading').addClass("d-none")
+$('.video-list').append('<%= j render('video_item') %>');
+<% if @videos.next_page %>
+  $('.pagination').replaceWith('<%= j paginate(@videos) %>');
+<% else %>
+  $('.pagination').remove();
+  $('.footer-cg').removeClass('d-none')
+<% end %>
