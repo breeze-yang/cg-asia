@@ -24,7 +24,7 @@
     </div>
   <% else %>
     <div class="container tour-table prize-table">
-      <%= sanitize @main_event.prizes_in_pc.prizes_table %>
+      <%= sanitize @main_event.prizes_in_pc&.prizes_table %>
     </div>
   <% end %>
   <div class="container gc-html-container" style="margin-top: 30px">
