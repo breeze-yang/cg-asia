@@ -11,6 +11,7 @@
       side_event: "边赛"
       info: "资讯"
       video: "视频"
+      online_poker: "线上游戏"
     attributes:
       admin_user:
         email: "邮箱"
@@ -71,6 +72,13 @@
         intro: '简介'
         published: '是否发布'
         main_body: '正文'
+      online_poker:
+        name: '名称'
+        title: '标题'
+        image: '缩略图'
+        intro: '简介'
+        published: '是否发布'
+        online_time: '上线时间'
 
     format: "%{attribute}%{message}"
     messages:
