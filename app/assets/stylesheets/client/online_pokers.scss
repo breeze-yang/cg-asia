@@ -1,0 +1,107 @@
+@import "client/vars";
+.online-pokers-content{
+  background:rgba(248,248,248,1);
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  .online-poker-item{
+    margin-bottom: 30px;
+  }
+  .poker-main{
+    display: flex;
+
+    > div {
+      padding-right: 20px;
+    }
+  }
+
+  .poker-attrs > div{
+    padding-bottom: 10px;
+  }
+  .online-time{
+    font-size: 13px;
+  }
+
+  .poker-title{
+    font-family: Helvetica-Bold;
+    font-weight: bold;
+    color: rgba(20,23,28,1);
+    font-size: 17px;
+    line-height: 16px;
+  }
+
+  .poker-intro{
+    font-family: Helvetica;
+    color: rgba(20,23,28,1);
+    font-size: 13px;
+    line-height: 16px
+  }
+
+  .poker_image img{
+    height: 140px;
+  }
+  .play-now-container{
+    text-align: center;
+    padding-top: 5px;
+  }
+  .play-now{
+    background:rgba(25,27,31,1);
+    padding: 5px 10px;
+    font-weight:bold;
+    color:rgba(255,255,255,1);
+    float: right;
+  }
+}
+
+@media (min-width: $breakpoints-lg) {
+  .online-pokers-content {
+    .online-poker-item{
+      background: white;
+    }
+
+    .poker-main{
+      padding: 0;
+    }
+
+    .poker_image img{
+      height: 170px;
+    }
+
+    .poker-name-container{
+      //width: 40%;
+      height: 170px;
+      font-family: Helvetica-Bold;
+      font-weight: bold;
+      font-size: 25px;
+      display: flex !important;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .poker-attrs{
+      padding-top: 35px;
+    }
+
+    .online-time{
+      font-size: 17px;
+    }
+
+    .poker-title{
+      line-height: 24px;
+    }
+
+    .poker-intro{
+      font-size: 17px;
+    }
+
+    .play-now-container{
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .play-now{
+      padding: 10px 17px;
+    }
+  }
+}

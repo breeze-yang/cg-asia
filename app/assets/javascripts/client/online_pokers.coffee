@@ -1,5 +1,5 @@
 document.addEventListener "turbolinks:load", ->
-  if $('.pagination').length && $('.new-list').length
+  if $('.pagination').length && $('.online_poker-list').length
     $('.footer-cg').addClass('d-none')
     $(window).scroll ->
       url = $('.pagination .next a').attr('href')

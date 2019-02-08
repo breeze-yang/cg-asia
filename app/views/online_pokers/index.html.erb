@@ -1,0 +1,14 @@
+<%= render 'online_pokers_bg' %>
+
+<div class="online-pokers-content">
+  <div class="container">
+    <div class="online_poker-list">
+      <%= render 'online_poker_item' %>
+    </div>
+    <div class="d-none1 online_pokers-pagination">
+      <%= paginate @online_pokers %>
+    </div>
+    <div class="cg-loading d-none">LOADING…</div>
+  </div>
+</div>
+

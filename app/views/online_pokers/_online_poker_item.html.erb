@@ -1,0 +1,26 @@
+<% @online_pokers.each do |online_poker| %>
+  <div class="row online-poker-item">
+    <div class="col-lg-10 poker-main">
+      <div class="poker_image">
+        <%= image_tag online_poker.image_url %>
+      </div>
+      <div class="poker-name-container d-none">
+        <div><%= online_poker.name %></div>
+      </div>
+      <div class="poker-attrs">
+        <div class="online-time">
+          <%= online_poker.online_time.to_date.to_s(:db) %>
+        </div>
+        <div class="poker-title">
+          <%= online_poker.title %>
+        </div>
+        <div class="poker-intro">
+          <%= online_poker.intro %>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-2 play-now-container">
+      <%= link_to 'PLAY NOW >', online_poker.url, class: 'play-now', target: '_blank' %>
+    </div>
+  </div>
+<% end %>

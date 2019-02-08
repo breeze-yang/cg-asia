@@ -8,4 +8,5 @@ Rails.application.routes.draw do
   resources :admin_images, only: [:create]
   resources :news, only: [:index, :show]
   resources :videos, only: [:index, :show]
+  resources :online_pokers, only: [:index]
 end

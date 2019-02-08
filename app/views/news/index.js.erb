@@ -1,4 +1,4 @@
-$('.news-loading').addClass("d-none")
+$('.cg-loading').addClass("d-none")
 $('.new-list').append('<%= j render('new-item') %>');
 <% if @news.next_page %>
   $('.pagination').replaceWith('<%= j paginate(@news) %>');

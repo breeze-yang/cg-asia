@@ -1,0 +1,8 @@
+$('.cg-loading').addClass("d-none")
+$('.online_poker-list').append('<%= j render('online_poker_item') %>');
+<% if @online_pokers.next_page %>
+  $('.pagination').replaceWith('<%= j paginate(@online_pokers) %>');
+<% else %>
+  $('.pagination').remove();
+  $('.footer-cg').removeClass('d-none')
+<% end %>
