@@ -31,11 +31,14 @@
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Dropdown link
+          <%= ENV['CURRENT_LOCALE'] == 'en' ? 'English' : '中文' %>
         </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="#">中文</a>
-          <a class="dropdown-item" href="#">English</a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="min-width: 0">
+          <% if ENV['CURRENT_LOCALE'] == 'en' %>
+            <a class="dropdown-item" href="#">中文</a>
+          <% else %>
+            <a class="dropdown-item" href="#">English</a>
+          <% end %>
         </div>
       </li>
     </ul>
