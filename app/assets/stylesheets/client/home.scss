@@ -1,6 +1,11 @@
 html, body {width:100%;height:100%;} /*非常重要的样式让背景图片100%适应整个屏幕*/
 @import "client/vars";
 
+.home-container .container{
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
 .home-navbar-bg {
   display: table;
   width: 100%;
@@ -22,6 +27,8 @@ html, body {width:100%;height:100%;} /*非常重要的样式让背景图片100%�
     font-weight: bold;
     color: rgba(255,255,255,1);
     letter-spacing: 1px;
+    line-height: 35px;
+    padding-bottom: 10px;
   }
 
   .bg-text{
@@ -29,6 +36,7 @@ html, body {width:100%;height:100%;} /*非常重要的样式让背景图片100%�
     font-family:Gotham-Medium;
     font-weight:500;
     color:rgba(254,221,137,1);
+    padding-bottom: 10px;
   }
 }
 
@@ -38,14 +46,15 @@ html, body {width:100%;height:100%;} /*非常重要的样式让背景图片100%�
 }
 
 .home-intro-title{
-  font-size: 29px;
+  font-size: 27px;
   font-family: TwCenMT-Bold;
   font-weight: bold;
   color: rgba(234,234,234,1);
+  padding-bottom: 15px;
 }
 
 .home-intro-content{
-  font-size: 17px;
+  font-size: 16px;
   font-family: Helvetica-Light;
   font-weight: 300;
   color: rgba(234,234,234,1);
@@ -55,12 +64,18 @@ html, body {width:100%;height:100%;} /*非常重要的样式让背景图片100%�
   height: 40px;
 }
 
+.home-jump-items {
+  displey: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  overflow-x: auto;
+}
+
 .home-jump-item {
   text-align: center;
 
-  > img {
-    height: 300px;
-  }
+  > img { height: 300px; }
 
   > p {
     font-size: 25px;
