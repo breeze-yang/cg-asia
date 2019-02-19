@@ -12,6 +12,12 @@
           <p><%= @main_event.location_name %></p>
           <p><%= "#{@main_event.begin_time.to_date} — #{@main_event.end_time.to_date}" %></p>
           <p>PRIZE POOL: <%= @main_event.prize_pool %></p>
+          <p class="main-event-pdf-download-mobile">
+            <a href="<%= @main_event.event_pdf_url %>" target="_blank">
+              <%= image_tag 'gold_download.png', height: 20 %>
+              <%= @main_event.pdf_name %>
+            </a>
+          </p>
         </div>
       </div>
     </div>

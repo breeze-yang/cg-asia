@@ -67,7 +67,7 @@
 }
 
 .tour-content{
-  padding: 20px 0 150px;
+  padding: 25px 0 150px;
   background: rgba(248,248,248,1);
   border-top: 1px solid rgba(233,233,233,1);
 }
@@ -87,13 +87,13 @@
 }
 
 .tour-title{
-  font-size: 26px;
+  font-size: 24px;
   font-weight: bold;
   color: rgba(20,23,28,1);
 }
 
 .tour-description{
-  font-size: 16px;
+  font-size: 15px;
   color:rgba(20,23,28,1);
 }
 
@@ -119,6 +119,14 @@
     height: 20px;
     margin: auto;
     background: rgba(224,224,224,1);
+  }
+}
+.main-event-pdf-download-mobile{
+  margin-top: 15px;
+  padding-bottom: 15px;
+  font-family: Helvetica;
+  a{
+    color: rgba(234,234,234,1);
   }
 }
 
