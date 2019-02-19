@@ -4,7 +4,9 @@ document.addEventListener "turbolinks:load", ->
     if ($(".navbar").offset().top > 50)
       $(".navbar-cg").removeClass("home-nav-scroll");
     else
-      $(".navbar-cg").addClass("home-nav-scroll");
+      expanded = $('.navbar-toggler-cg').attr('aria-expanded');
+      if (expanded == "false")
+        $(".navbar-cg").addClass("home-nav-scroll");
 
     height = $(window).scrollTop();
     if (height > 200)
