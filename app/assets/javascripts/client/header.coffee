@@ -8,8 +8,11 @@ document.addEventListener "turbolinks:load", ->
       if (expanded == "false")
         $(".navbar-cg").addClass("home-nav-scroll");
 
+    if (screen.width < 992)
+      return;
+
     height = $(window).scrollTop();
-    if (height > 200)
+    if (height > 200 )
       $('#back_to_top').fadeIn();
     else
       $('#back_to_top').fadeOut();
