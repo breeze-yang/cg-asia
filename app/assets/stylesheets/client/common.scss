@@ -19,8 +19,14 @@
   position: fixed;
   bottom: 50px;
   right: 5%;
+  height: 100px;
+  width: 100px;
+  background: url(asset-path('back_to_top.png')) center center;
 }
 
+#back_to_top:hover {
+  background: url(asset-path('back_to_top_hover.png')) center center;
+}
 .cg-loading{
   font-size: 20px;
   text-align: center;

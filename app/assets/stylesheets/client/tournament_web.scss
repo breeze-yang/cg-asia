@@ -14,26 +14,34 @@
   }
 
   .tournament-spacer{
-    width: 130%;
+    width: 260%;
     margin-top: 20px;
-    margin-left: 0;
-  }
-
-  .tournament-title-label{
-    text-align: right;
+    margin-left: -220%;
   }
 
   .tournament-nav {
     display: none;
   }
 
-  .main-event-label{
+  .tournament-title-label{
+    font-size: 40px;
+  }
+
+  .tournament-title{
+    font-size: 40px;
+  }
+
+  .tournament-attrs p{
+    font-size: 19px;
+  }
+
+    .main-event-label{
     font-size: 45px;
     font-family: TwCenMT-Bold;
     font-weight: bold;
     color: rgba(20,23,28,1);
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 100px;
+    padding-bottom: 50px;
     display: block !important;
   }
 
@@ -43,7 +51,7 @@
   }
 
   .main-event-pdf-download a{
-    font-size: 17px;
+    font-size: 15px;
     font-family: Helvetica-Bold;
     font-weight: bold;
     color: rgba(20,23,28,1);
@@ -58,6 +66,7 @@
       background: none;
       padding: 15px;
       font-size: 19px;
+      font-family: Gotham-Medium;
       color: rgba(149,149,150,1);
     }
   }

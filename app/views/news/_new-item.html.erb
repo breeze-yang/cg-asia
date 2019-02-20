@@ -2,7 +2,7 @@
   <a style="text-decoration:none" href="<%= news_path(new) %>">
     <div class="media media-new">
       <%= image_tag new.image_url, class: 'mr-3' %>
-      <div class="media-body">
+      <div class="media-body new-body">
         <div class="new-date"><%= new.created_at.to_date.to_s(:db) %></div>
         <div class="new-title"><%= new.title %></div>
         <div class="new-intro d-none"><%= new.intro %></div>
