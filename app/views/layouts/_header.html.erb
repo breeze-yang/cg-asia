@@ -27,9 +27,9 @@
       </li>
       <li class="nav-item">
         <a class="nav-link" href="/online_pokers">ONLINE POKER</a>
-        <div class="<%= 'nav-link-active' if current_page?('/online_poker') %>"></div>
+        <div class="<%= 'nav-link-active' if current_page?('/online_pokers') %>"></div>
       </li>
-      <li class="nav-item dropdown">
+      <li class="nav-item dropdown btn-language">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           <%= ENV['CURRENT_LOCALE'] == 'en' ? 'English' : '中文' %>
         </a>

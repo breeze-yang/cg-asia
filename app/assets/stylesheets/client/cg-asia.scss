@@ -51,6 +51,10 @@
 @media (min-width: $breakpoints-lg) {
   .cg-asia-bg {
     background: url(asset-path('cg-asia/cg-asia-bg-web.png')) no-repeat center center;
+    background-size: cover;
+    -webkit-background-size: cover; //webkit核心
+    -moz-background-size: cover; //FF核心
+    -o-background-size: cover; //应该是Opera核心吧，反正不是IE的，就先不管它了
   }
 
   .cg-asia-margin{

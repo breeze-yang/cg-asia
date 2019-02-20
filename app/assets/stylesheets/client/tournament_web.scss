@@ -2,6 +2,10 @@
 @media (min-width: $breakpoints-lg) {
   .tournament-bg {
     background: url(asset-path('tournament/tournament_bg_pc.png')) no-repeat center center;
+    background-size: cover;
+    -webkit-background-size: cover; //webkit核心
+    -moz-background-size: cover; //FF核心
+    -o-background-size: cover; //应该是Opera核心吧，反正不是IE的，就先不管它了
     height: 75%;
   }
 

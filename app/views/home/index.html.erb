@@ -1,6 +1,7 @@
-<div class="cg-container">
+<div class="cg-container" style="background-color: #0c0c0c">
   <div class="home-navbar-bg">
     <div class="bg-content container">
+      <div class="bg-bar"></div>
       <div class="bg-title">CERTIFIED GENIUS CORP(ASIA)</div>
       <div class="bg-text">Focus on top global competitive games and
         <span class="bg-text-spacer">surrounding entertainment services.</span>
@@ -51,20 +52,26 @@
         </div>
       </div>
       <div class="home-spacer"></div>
-      <div class="home-spacer"></div>
+      <div class="home-spacer d-lg-none"></div>
 
       <div class="row home-jump-items">
         <div class="col-lg-4 home-jump-item">
-          <%= image_tag 'home/event_zone.jpg' %>
-          <p>EVENT ZONE OF CG-ASIA</p>
+          <a href="#">
+            <%= image_tag 'home/event_zone.jpg' %>
+            <div>EVENT ZONE OF CG-ASIA</div>
+          </a>
         </div>
         <div class="col-lg-4 home-jump-item">
-          <%= image_tag 'home/latest_news.jpg' %>
-          <p>LATEST NEWS</p>
+          <a href="/news">
+            <%= image_tag 'home/latest_news.jpg' %>
+            <div>LATEST NEWS</div>
+          </a>
         </div>
         <div class="col-lg-4 home-jump-item">
-          <%= image_tag 'home/online_poker.png' %>
-          <p>ONLINE POKER</p>
+          <a href="/online_pokers">
+            <%= image_tag 'home/online_poker.png' %>
+            <div>ONLINE POKER</div>
+          </a>
         </div>
       </div>
       <div class="home-spacer"></div>

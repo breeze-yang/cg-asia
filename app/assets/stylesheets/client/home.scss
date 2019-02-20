@@ -7,6 +7,9 @@ html, body {width:100%;height:100%;} /*非常重要的样式让背景图片100%�
   height: 400px;
   background: url(asset-path('home/home_background_mobile.png')) no-repeat center center;
   background-size: cover;
+  -webkit-background-size: cover; //webkit核心
+  -moz-background-size: cover; //FF核心
+  -o-background-size: cover; //应该是Opera核心吧，反正不是IE的，就先不管它了
 
   .bg-content{
     margin-top: 140px;
@@ -69,15 +72,24 @@ html, body {width:100%;height:100%;} /*非常重要的样式让背景图片100%�
 
 .home-jump-item {
   text-align: center;
+  padding: 0;
+  margin: 0 10px;
 
-  > img { height: 300px; }
+  img { height: 300px; }
 
-  > p {
+  div {
     font-size: 25px;
     font-family: TwCenMT-Bold;
     font-weight: bold;
     color: rgba(255,255,255,1);
-    padding: 15px 0;
+    position: absolute;
+    padding-top: 12px;
+    bottom: 0;
+    width: 100%;
+    height: 35%;
+    text-align: center;
+    background-color: #0c0c0c;
+    opacity: 0.9;
   }
 }
 
@@ -88,18 +100,34 @@ html, body {width:100%;height:100%;} /*非常重要的样式让背景图片100%�
 @media (min-width: $breakpoints-lg) {
   .home-navbar-bg {
     background: url(asset-path('home/home_background.png')) no-repeat bottom center;
+    background-size: cover;
+    -webkit-background-size: cover; //webkit核心
+    -moz-background-size: cover; //FF核心
+    -o-background-size: cover; //应该是Opera核心吧，反正不是IE的，就先不管它了
     height: 90%;
+
+    .bg-content{
+      margin-top: 350px;
+      padding-bottom: 200px;
+    }
+
+    .bg-content>div {
+      margin: 20px 0;
+    }
 
     .bg-title{
       font-size: 50px;
     }
 
-    .bg-text{
-      font-size:24px;
+    .bg-bar{
+      width:40px;
+      height:4px;
+      margin-bottom: 40px !important;
+      background:rgba(255,255,255,1);
     }
 
-    .bg-content{
-      margin-top: 400px;
+    .bg-text{
+      font-size:24px;
     }
 
     .bg-text-spacer{
@@ -108,7 +136,7 @@ html, body {width:100%;height:100%;} /*非常重要的样式让背景图片100%�
   }
 
   .home-spacer{
-    height: 100px;
+    height: 200px;
   }
 
   .home-intro-spacer{
@@ -122,5 +150,20 @@ html, body {width:100%;height:100%;} /*非常重要的样式让背景图片100%�
 
   .home-intro-content{
     font-size:20px;
+  }
+
+  .home-jump-item {
+    a {
+      display: block;
+      max-width: 316px;
+    }
+    img {
+      height: 400px;
+      width: 316px;
+    }
+
+    div{
+      width: 316px;
+    }
   }
 }
