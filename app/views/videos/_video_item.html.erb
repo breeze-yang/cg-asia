@@ -1,4 +1,4 @@
-<% @videos.each do |video| %>
+<% @videos_arr.each do |video| %>
   <div class="row video-item">
     <div class="col-lg-4 video-play" video_url="<%= video.url %>">
       <%= image_tag video.image_url, class: 'img-fluid' %>

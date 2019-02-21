@@ -11,4 +11,10 @@ ActiveAdmin.register Info do
   show do
     render 'show', context: self
   end
+
+  controller do
+    def find_collection(options = {})
+      super.order(id: :desc)
+    end
+  end
 end

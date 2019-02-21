@@ -21,7 +21,7 @@
       <% new = @news_arr.to_a.shift %>
 
       <div class="col-4">
-        <a href="<%= news_path(first_new) %>">
+        <a href="<%= news_path(new) %>">
           <%= image_tag new.image_url, class: 'img-fluid' %>
           <div class="new-attrs">
             <div class="new-date"><%= new.created_at.to_date.to_s(:db) %></div>

@@ -7,6 +7,7 @@ context.instance_eval do
       video_tag(video.url, controls: true, preload: 'none', height: 400)
     end
     row(:duration)
+    row(:position)
     row(:published)
     row(:created_at)
     row(:updated_at)

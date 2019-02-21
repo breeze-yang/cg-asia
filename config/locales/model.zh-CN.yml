@@ -66,6 +66,7 @@
         url: '视频链接'
         duration: '视频时长'
         published: '是否发布'
+        position: '排序'
       info:
         title: '标题'
         image: '缩略图'

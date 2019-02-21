@@ -1,5 +1,5 @@
 class Video < ApplicationRecord
   mount_uploader :image, ImgBaseUploader
 
-  scope :id_desc, -> { order(id: :desc) }
+  scope :position_desc, -> { order(position: :desc, id: :desc) }
 end
