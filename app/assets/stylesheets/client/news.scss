@@ -22,19 +22,19 @@
   margin-top: 15px;
 }
 
+
 .news-content{
   font-family: Helvetica;
   padding-top: 20px;
   padding-bottom: 20px;
   background: rgba(248,248,248,1);
+
+  a{
+    text-decoration:none
+  }
 }
 
-.media-new{
-  padding: 20px 0;
-  img{
-    width: 35%;
-  }
-
+.new-body{
   .new-date{
     color:rgba(109,109,109,1);
     font-size: 13px;
@@ -42,10 +42,21 @@
 
   .new-title{
     font-size: 15px;
-    margin: 10px 0;
+    margin: 5px 0 0;
     font-family: Helvetica-Bold;
     font-weight: bold;
     color: rgba(20,23,28,1);
+
+    line-height: 1.2em;
+    height: 3.6em;
+    overflow: hidden;
+  }
+}
+
+.media-new{
+  padding: 20px 0;
+  img{
+    width: 35%;
   }
 }
 
@@ -61,17 +72,8 @@
 
   .new-body{
     padding-top: 20px;
-    padding-left: 20px;
+    padding-left: 10px;
     padding-right: 20px;
-  }
-
-  .media-new{
-    background:rgba(255,255,255,1);
-    padding: 0;
-    margin: 20px 0;
-    img{
-      width: 25%;
-    }
 
     .new-date{
       color:rgba(120,120,120,1);
@@ -83,6 +85,9 @@
       font-family: Helvetica-Bold;
       font-weight: bold;
       color: rgba(20,23,28,1);
+      height: auto;
+      overflow: auto;
+      margin-bottom: 10px;
     }
 
     .new-intro{
@@ -90,6 +95,68 @@
       font-size: 16px;
       color:rgba(120,120,120,1);
     }
+  }
+
+  .media-new{
+    background:rgba(255,255,255,1);
+    padding: 0;
+    margin: 20px 0;
+    img{
+      width: 30%;
+    }
+  }
+
+  .top-news{
+    display: block !important;
+    margin-top: 50px;
+    margin-bottom: 90px;
+  }
+
+  .first-new img{
+    min-height: 330px;
+  }
+  .three-news{
+    margin-top: 30px;
+
+    .new-attrs{
+      background:rgba(25,27,31,1);
+      padding: 10px 15px;
+    }
+
+    .new-date{
+      font-size: 14px;
+      font-family: Helvetica-Light;
+      color: rgba(176,176,176,1);
+    }
+
+    .new-title{
+      margin-top: 10px;
+      margin-bottom: 10px;
+      font-family: Helvetica-Bold;
+      font-weight: bold;
+      color: rgba(255,255,255,1);
+      line-height: 1.4em;
+      height: 2.8em;
+      overflow: hidden;
+    }
+
+    .new-intro{
+      font-size: 13px;
+      font-family: Helvetica;
+      color: rgba(234,234,234,1);
+      line-height: 1.3em;
+      height: 2.6em;
+      overflow: hidden;
+    }
+  }
+
+  .more-news{
+    font-size: 32px;
+    font-family: TwCenMT-Bold;
+    font-weight: bold;
+    color:rgba(20,23,28,1);
+    padding: 20px 0;
+    display: block !important;
   }
 }
 
@@ -114,7 +181,9 @@
 }
 
 @media (min-width: $breakpoints-lg) {
-  .new-title{
-    font-size: 29px;
+  .new-detail{
+    .new-title{
+      font-size: 29px;
+    }
   }
 }

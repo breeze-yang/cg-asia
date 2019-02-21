@@ -2,10 +2,13 @@
 
 <div class="news-content">
   <div class="container">
+    <%= render 'index_web' %>
+
+    <div class="more-news d-none">MORE NEWS</div>
     <div class="new-list">
       <%= render 'new-item' %>
     </div>
-    <div class="d-none1 news-pagination">
+    <div class="d-none news-pagination">
       <%= paginate @news %>
     </div>
     <div class="cg-loading d-none">LOADING…</div>

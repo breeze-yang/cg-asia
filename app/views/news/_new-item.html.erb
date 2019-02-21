@@ -1,5 +1,5 @@
-<% @news.each do |new| %>
-  <a style="text-decoration:none" href="<%= news_path(new) %>">
+<% @news_arr.each do |new| %>
+  <a href="<%= news_path(new) %>">
     <div class="media media-new">
       <%= image_tag new.image_url, class: 'mr-3' %>
       <div class="media-body new-body">
