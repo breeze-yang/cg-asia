@@ -3,6 +3,7 @@ context.instance_eval do
     row(:title)
     row(:intro)
     row(:image) { |info| image_tag(info.image_url.to_s, height: 300) }
+    row(:position)
     row(:published)
     row(:created_at)
     row(:updated_at)

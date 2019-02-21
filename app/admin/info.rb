@@ -1,5 +1,7 @@
 ActiveAdmin.register Info do
-  permit_params :title, :intro, :main_body, :image, :published
+  config.sort_order = 'position_desc'
+
+  permit_params :title, :intro, :main_body, :image, :published, :position
   form partial: 'form'
 
   index do

@@ -60,18 +60,19 @@
         chip: "筹码"
         guarantee: "保底池"
       video:
-         title: '标题'
-         image: '缩略图'
-         intro: '简介'
-         url: '视频链接'
-         duration: '视频时长'
-         published: '是否发布'
+        title: '标题'
+        image: '缩略图'
+        intro: '简介'
+        url: '视频链接'
+        duration: '视频时长'
+        published: '是否发布'
       info:
         title: '标题'
         image: '缩略图'
         intro: '简介'
         published: '是否发布'
         main_body: '正文'
+        position: '排序'
       online_poker:
         name: '名称'
         title: '标题'

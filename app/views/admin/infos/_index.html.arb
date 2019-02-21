@@ -3,6 +3,7 @@ context.instance_eval do
   column(:title)
   column(:intro)
   column(:image) { |intro| image_tag(intro.image_url.to_s, height: 150) }
+  column(:position)
   column(:published)
   actions
 end

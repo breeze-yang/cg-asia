@@ -1,4 +1,5 @@
 <% return if is_mobile? %>
+<% return if @news_arr.size < 5 %>
 
 <div class="top-news d-none">
   <% first_new = @news_arr.to_a.shift %>
