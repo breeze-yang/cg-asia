@@ -2,7 +2,7 @@
   <div class="container tournament-margin">
     <div class="row tournament-base">
       <div class="col-lg-4 tournament-title-label">
-        <div>TOURNAMENT</div>
+        <div><%= t 'tour.title_label' %></div>
         <div class="tournament-spacer"></div>
       </div>
       <div class="col-lg-7">
@@ -10,7 +10,7 @@
         <div class="tournament-attrs">
           <p><%= @main_event.location_name %></p>
           <p><%= "#{@main_event.begin_time.to_date} — #{@main_event.end_time.to_date}" %></p>
-          <p>PRIZE POOL: <%= @main_event.prize_pool %></p>
+          <p><%= t 'tour.prize_pool' %>: <%= @main_event.prize_pool %></p>
           <p class="main-event-pdf-download-mobile d-lg-none">
             <a href="<%= @main_event.event_pdf_url %>" target="_blank">
               <%= image_tag 'gold_download.png', height: 20 %>
@@ -27,19 +27,19 @@
   <ul class="nav tournament-nav nav-justified" role="tablist">
     <li class="nav-item">
       <a class="nav-link active" data-toggle="pill" href="#introduction">
-        INTRODUCTION
+        <%= t 'tour.introduction' %>
         <div class="spacer"></div>
       </a>
     </li>
     <li class="nav-item">
       <a class="nav-link" data-toggle="pill" href="#main_event">
-        MAIN EVENT
+        <%= t 'tour.main_event' %>
         <div class="spacer"></div>
       </a>
     </li>
     <li class="nav-item">
       <a class="nav-link" data-toggle="pill" href="#side_event">
-        SIDE EVENT
+        <%= t 'tour.side_event' %>
         <div class="spacer"></div>
       </a>
     </li>

@@ -3,8 +3,8 @@
     <div class="bg-content container">
       <div class="bg-bar"></div>
       <div class="bg-title">CERTIFIED GENIUS CORP(ASIA)</div>
-      <div class="bg-text">Focus on top global competitive games and
-        <span class="bg-text-spacer">surrounding entertainment services.</span>
+      <div class="bg-text">
+        <%= t 'home.bg_text_1' %><span class="bg-text-spacer"><%= t 'home.bg_text_2' %></span>
       </div>
       <div class="bg-icons">
         <span style="margin-right: 20px">
@@ -24,12 +24,13 @@
     <div class="container">
       <div class="home-spacer"></div>
       <div class="row">
-        <div class="col-lg-3 home-intro-title">ABOUT <span class="text-nowrap">CG-ASIA</span></div>
+        <div class="col-lg-3 home-intro-title">
+          <%= t 'home.a_intro_title_1' %>
+          <span class="text-nowrap">CG-ASIA</span>
+        </div>
         <div class="home-intro-spacer"></div>
-        <div class="col-lg-8 home-intro-content">Certified Genius Corp (Asia) was founded in August 2016 by Mr. Mario
-          Ho, invested by the US dollar fund SIG Heiner Asia, focusing on providing top-notch Asian competitions and
-          peripheral entertainment services to competitive gamers around the world. Officially authorized by the WSOP
-          since 2018. The first WSOP ASIA will be held in …
+        <div class="col-lg-8 home-intro-content">
+          <%= t 'home.a_intro_content' %>
         </div>
       </div>
       <div class="row">
@@ -44,11 +45,8 @@
       <div class="row">
         <div class="col-lg-3 home-intro-title">WSOP ASIA</div>
         <div class="home-intro-spacer"></div>
-        <div class="col-lg-8 home-intro-content">WSOP ASIA is presented by Certified Genius (HK) Limited. With HKD 30
-          million guaranteed prize pool and the world’s best in attendance we are extremely pleased to be hosting such a
-          prestigious event for the first time in Macau, China. There’re a number of iconic hot events, and we also have
-          Asian featured events. Players will be able to compete for high prizes and the gold bracelet that representing
-          the highest glory of WSOP. We ensure that players of all levels can enjoy greatest pleasure in WSOP ASIA.
+        <div class="col-lg-8 home-intro-content">
+          <%= t 'home.b_intro_content' %>
         </div>
       </div>
       <div class="home-spacer"></div>
@@ -58,19 +56,19 @@
         <div class="col-lg-4 home-jump-item">
           <a href="#">
             <%= image_tag 'home/event_zone.jpg' %>
-            <div>EVENT ZONE OF CG-ASIA</div>
+            <div><%= t 'home.a_home_jump_item' %></div>
           </a>
         </div>
         <div class="col-lg-4 home-jump-item">
           <a href="/news">
             <%= image_tag 'home/latest_news.jpg' %>
-            <div>LATEST NEWS</div>
+            <div><%= t 'home.b_home_jump_item' %></div>
           </a>
         </div>
         <div class="col-lg-4 home-jump-item">
           <a href="/online_pokers">
             <%= image_tag 'home/online_poker.png' %>
-            <div>ONLINE POKER</div>
+            <div><%= t 'home.c_home_jump_item' %></div>
           </a>
         </div>
       </div>

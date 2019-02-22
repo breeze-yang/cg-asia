@@ -1,6 +1,6 @@
 <div id="main_event" class="tab-pane fade">
   <div class="container main-event-label d-none">
-      MAIN EVENT.
+    <%= t 'tour.main_event' %>.
     <span class="main-event-pdf-download float-right">
       <a href="<%= @main_event.event_pdf_url %>" target="_blank">
         <%= image_tag 'download.png', height: 20 %>
@@ -11,19 +11,27 @@
   <div class="container">
     <ul class="nav nav-main-event nav-justified" role="tablist">
       <li class="nav-item">
-        <a class="nav-link active" data-toggle="pill" href="#schedule">Schedule</a>
+        <a class="nav-link active" data-toggle="pill" href="#schedule">
+          <%= t 'tour.schedule' %>
+        </a>
       </li>
       <li class="spacer"></li>
       <li class="nav-item">
-        <a class="nav-link" data-toggle="pill" href="#structure">Structure</a>
+        <a class="nav-link" data-toggle="pill" href="#structure">
+          <%= t 'tour.structure' %>
+        </a>
       </li>
       <li class="spacer"></li>
       <li class="nav-item">
-        <a class="nav-link" data-toggle="pill" href="#prize">Prize</a>
+        <a class="nav-link" data-toggle="pill" href="#prize">
+          <%= t 'tour.prize' %>
+        </a>
       </li>
       <li class="spacer"></li>
       <li class="nav-item">
-        <a class="nav-link" data-toggle="pill" href="#location">Location</a>
+        <a class="nav-link" data-toggle="pill" href="#location">
+          <%= t 'tour.location' %>
+        </a>
       </li>
     </ul>
   </div>

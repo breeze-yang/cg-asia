@@ -146,6 +146,10 @@ html, body {width:100%;height:100%;} /*非常重要的样式让背景图片100%�
 
   .home-intro-title{
     font-size: 38px;
+
+    .text-nowrap{
+      display: block;
+    }
   }
 
   .home-intro-content{
