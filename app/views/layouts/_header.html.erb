@@ -6,27 +6,27 @@
   <div class="collapse navbar-collapse" id="navbarNavDropdown">
     <ul class="navbar-nav navbar-nav-cg ml-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="/">HOME</a>
+        <a class="nav-link" href="/"><%= t 'navbar.home' %></a>
         <div class="<%= 'nav-link-active' if current_page?(root_path) %>"></div>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/cg_asia">CG ASIA</a>
+        <a class="nav-link" href="/cg_asia"><%= t 'navbar.cg_asia' %></a>
         <div class="<%= 'nav-link-active' if current_page?('/cg_asia') %>"></div>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/tournament">TOURNAMENT</a>
+        <a class="nav-link" href="/tournament"><%= t 'navbar.tournament' %></a>
         <div class="<%= 'nav-link-active' if current_page?('/tournament') %>"></div>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/news">NEWS</a>
+        <a class="nav-link" href="/news"><%= t 'navbar.news' %></a>
         <div class="<%= 'nav-link-active' if controller.controller_name == 'news' %>"></div>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href=/videos>VIDEOS</a>
+        <a class="nav-link" href=/videos><%= t 'navbar.videos' %></a>
         <div class="<%= 'nav-link-active' if current_page?('/videos') %>"></div>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/online_pokers">ONLINE POKER</a>
+        <a class="nav-link" href="/online_pokers"><%= t 'navbar.online_poker' %></a>
         <div class="<%= 'nav-link-active' if current_page?('/online_pokers') %>"></div>
       </li>
       <li class="nav-item dropdown btn-language">
