@@ -5,6 +5,7 @@ context.instance_eval do
   column(:intro)
   column(:image) { |poker| image_tag(poker.image_url.to_s, height: 150) }
   column(:online_time)
+  column(:position)
   column(:published)
   actions
 end

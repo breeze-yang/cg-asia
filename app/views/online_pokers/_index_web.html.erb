@@ -1,0 +1,29 @@
+<% return if is_mobile? %>
+<% return if @online_pokers_arr.size < 5 %>
+
+<div class="top-online-pokers d-none">
+  <div class="row">
+    <% 3.times.each do %>
+      <% online_poker = @online_pokers_arr.shift %>
+      <div class="col-4">
+        <div class="top-poker">
+          <%= image_tag online_poker.image_url, class: 'img-fluid' %>
+          <div class="poker-attrs top-poker-attrs">
+            <div class="online-time">
+              <%= online_poker.online_time.to_date.to_s(:db) %>
+            </div>
+            <div class="poker-title">
+              <%= online_poker.title %>
+            </div>
+            <div class="poker-intro">
+              <%= online_poker.intro %>
+            </div>
+          </div>
+        </div>
+        <div class="top-play-now-container">
+          <%= link_to 'PLAY NOW >', online_poker.url, class: 'play-now', target: '_blank' %>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>

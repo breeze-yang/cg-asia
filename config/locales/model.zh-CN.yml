@@ -81,6 +81,8 @@
         intro: '简介'
         published: '是否发布'
         online_time: '上线时间'
+        position: '排序'
+
 
     format: "%{attribute}%{message}"
     messages:

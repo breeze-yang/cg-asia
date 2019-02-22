@@ -56,6 +56,10 @@
 
 @media (min-width: $breakpoints-lg) {
   .online-pokers-content {
+    .poker-attrs > div{
+      padding-bottom: 10px;
+    }
+
     .online-poker-item{
       background: white;
     }
@@ -88,7 +92,8 @@
     }
 
     .poker-title{
-      line-height: 24px;
+      line-height: 22px;
+      font-size: 20px;
     }
 
     .poker-intro{
@@ -102,7 +107,42 @@
       align-items: center;
     }
     .play-now{
-      padding: 10px 17px;
+      padding: 10px 23px 5px;
+      font-size: 19px;
+    }
+  }
+
+  .top-online-pokers{
+    display: block !important;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+    .top-poker{
+      position: relative;
+    }
+
+    .top-poker-attrs{
+      padding: 10px 20px;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      background:rgba(255,255,255,1);
+      opacity: 0;
+    }
+
+    .top-poker-attrs:hover{
+      opacity:0.7277;
+    }
+
+    .top-play-now-container{
+      background:rgba(255,255,255,1);
+      padding: 20px;
+      text-align: right;
+
+      .play-now{
+        float: none;
+        padding-bottom: 8px;
+      }
     }
   }
 }

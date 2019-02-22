@@ -2,7 +2,7 @@
 <% return if @videos_arr.size < 5 %>
 
 <div class="top-videos d-none">
-  <% first_video = @videos_arr.to_a.shift %>
+  <% first_video = @videos_arr.shift %>
   <div class="first-video row">
     <div class="col-7">
       <%= video_tag(first_video.url, controls: true, preload: 'true', class: 'img-fluid') %>
@@ -16,13 +16,12 @@
 
   <div class="row three-videos video-list">
     <% 3.times.each do %>
-      <% video = @videos_arr.to_a.shift %>
+      <% video = @videos_arr.shift %>
       <div class="col-4">
         <div class="video-play" video_url="<%= video.url %>">
           <%= image_tag video.image_url, class: 'img-fluid' %>
           <%= image_tag 'video_play.png', height: 50, class: 'video-play-img' %>
         </div>
-        <%#= image_tag video.image_url, class: 'img-fluid' %>
         <div class="video-attrs">
           <div class="video-duration"><%= video.duration %></div>
           <div class="video-title"><%= video.title %></div>

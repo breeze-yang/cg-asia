@@ -2,7 +2,7 @@
 <% return if @news_arr.size < 5 %>
 
 <div class="top-news d-none">
-  <% first_new = @news_arr.to_a.shift %>
+  <% first_new = @news_arr.shift %>
   <a href="<%= news_path(first_new) %>">
     <div class="first-new row">
       <div class="col-7">
@@ -18,7 +18,7 @@
 
   <div class="row three-news">
     <% 3.times.each do %>
-      <% new = @news_arr.to_a.shift %>
+      <% new = @news_arr.shift %>
 
       <div class="col-4">
         <a href="<%= news_path(new) %>">
