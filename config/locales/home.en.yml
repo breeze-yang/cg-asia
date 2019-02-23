@@ -4,6 +4,7 @@ en:
     cg_asia: 'CG ASIA'
     tournament: 'TOURNAMENT'
     news: 'NEWS'
+    more_news: 'MORE NEWS'
     videos: 'VIDEOS'
     online_poker: 'ONLINE POKER'
   home:
@@ -31,3 +32,9 @@ en:
     structure: 'Structure'
     prize: 'Prize'
     location: 'Location'
+    date_time: 'Date&Time'
+    event: 'Event'
+    buyin: 'Buyin'
+    chip: 'Chip'
+    guarantee: 'Guarantee'
+    detail: 'Detail'
