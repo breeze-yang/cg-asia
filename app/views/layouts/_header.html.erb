@@ -35,9 +35,9 @@
         </a>
         <div class="dropdown-menu cg-dropdown-menu" aria-labelledby="languageDropdown">
           <% if ENV['CURRENT_LOCALE'] == 'en' %>
-            <a class="dropdown-item" href="#">中文</a>
+            <a class="dropdown-item" href="<%= ENV['CN_URL'] %>">中文</a>
           <% else %>
-            <a class="dropdown-item" href="#">English</a>
+            <a class="dropdown-item" href="<%= ENV['EN_URL'] %>">English</a>
           <% end %>
         </div>
       </li>
